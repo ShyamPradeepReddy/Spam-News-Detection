@@ -6,6 +6,7 @@ True_news = pd.read_csv("True_news.csv")
 #loads the True_news data into True_news
 Fake_news = pd.read_csv("Fake_news.csv")
 #loads the Fake_news data into Fake_news
+#Add label values
 True_news['label']=0
 Fake_news['label']=1
 dataset1 = True_news[[ 'text' , 'label' ]]
